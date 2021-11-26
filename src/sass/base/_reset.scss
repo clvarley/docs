@@ -1,0 +1,21 @@
+/**
+ * Sensible defaults across all browsers
+ */
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden, [hidden] {
+    display: none;
+}
+
+header, nav, article, section, aside, footer {
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}

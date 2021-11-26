@@ -1,0 +1,41 @@
+/**
+ * Common layout styles
+ *
+ * Controls site-wide content layout, which in most cases will just be the
+ * common container styles.
+ */
+
+.content {
+   box-sizing: border-box;
+   width: 100%;
+   max-width: none;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+}
+
+
+/* ============ 768px ============ */
+
+@media ( min-width: $tablet )  {
+		.content {
+				max-width: 48rem; // 768px
+		}
+}
+
+
+/* ============ 1024px ============ */
+
+@media ( min-width: $laptop )  {
+		.content {
+				max-width: 62rem; // 992px
+		}
+}
+
+
+/* ============ 1280px ============ */
+@media ( min-width: $desktop )  {
+		.content {
+				max-width: 64rem; // 1024px
+		}
+}

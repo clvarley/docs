@@ -1,0 +1,26 @@
+/**
+ * Defines project wide SCSS variables
+ */
+
+/* ============ Breakpoints ============ */
+
+$tablet: 48.01em;  // (768px)
+$laptop: 64.01em;  // (1024px)
+$desktop: 80.01em; // (1280px)
+
+
+/* ============ Font Sizes ============ */
+
+$font-small: .75rem; // 12px
+$font-normal: 1rem;  // 16px
+
+
+/* ============ Colours ============ */
+
+$colour-white: #fff;
+$colour-black: #000;
+
+
+/* ============ Background ============ */
+
+$background-nav: rgba(0, 0, 0, .75);

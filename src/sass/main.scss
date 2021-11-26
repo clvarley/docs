@@ -1,0 +1,29 @@
+/**
+ * Main style sheet for the site
+ *
+ * Make sure you remeber to add any new files you create as an import here!
+ */
+
+/* ============ Variables & functions ============ */
+
+@import "./abstracts/extensions";
+@import "./abstracts/variables";
+@import "./abstracts/utilities";
+
+
+/* ============ Base ============ */
+
+@import "./base/font";
+@import "./base/layout";
+@import "./base/reset";
+@import "./base/typography";
+
+
+/* ============ Components ============ */
+
+@import "./components/footer";
+@import "./components/header";
+
+/* ============ Elements ============ */
+
+@import "./elements/small";

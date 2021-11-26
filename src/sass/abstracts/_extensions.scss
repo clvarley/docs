@@ -1,0 +1,27 @@
+/**
+ * Defines placeholder extensions for use with @extends
+ */
+
+/* ============ Paddings ============ */
+
+%padding-x {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+%padding-y {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+%padding {
+    padding: 1rem;
+}
+
+
+/* ============ Flex ============ */
+
+%flex {
+    display: flex;
+    flex-direction: row;
+}
