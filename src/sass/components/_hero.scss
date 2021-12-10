@@ -1,0 +1,53 @@
+/*
+ * Homepage hero header
+ */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @extend %padding-x;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    min-height: 70vh;
+    text-align: center;
+    color: $colour-white;
+    background-color: $colour-green;
+    box-shadow: inset .125rem .125rem .25rem .125rem rgba(0, 0, 0, 0.1);
+
+    &__top {
+
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 2rem;
+
+        @media ( min-width: $laptop ) {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__tag {
+        @extend %margin-spaced;
+    }
+
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media ( min-width: $tablet ) {
+            flex-direction: row;
+        }
+    }
+
+    &__button {
+        @extend %margin-spaced;
+
+        @media ( min-width: $tablet ) {
+            margin: 1rem .5rem 0;
+        }
+    }
+}

@@ -2,6 +2,13 @@
  * Sensible defaults across all browsers
  */
 
+// While contentious, I believe this should always be the default
+* {
+    box-sizing: border-box;
+}
+
+/* ============ Defaults ============ */
+
 body, html {
     margin: 0;
     padding: 0;
