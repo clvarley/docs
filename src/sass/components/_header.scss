@@ -3,5 +3,9 @@
  */
 
 .header {
-
+    top: 0;
+    position: sticky;
+    background-color: $colour-white;
+    box-shadow: .0625rem .0625rem .375rem -.25rem $colour-black;
+    // box-shadow: 1px 1px 6px 4px #0F0A0A;
 }

@@ -3,5 +3,23 @@
  */
 
 .menu {
-  
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1;
+
+    @media ( min-width: $tablet ) {
+        display: flex;
+    }
+
+    &__item {
+        &--right {
+            margin-left: auto;
+        }
+    }
+
+    &__link {
+        display: block;
+        @extend %padding;
+    }
 }
