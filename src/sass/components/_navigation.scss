@@ -3,5 +3,17 @@
  */
 
 .navigation {
-    
+    &__button {
+        @extend %padding;
+    }
+
+    &__mobile {
+        @media ( min-width: $tablet ) {
+            display: none;
+        }
+    }
+
+    &__main {
+      
+    }
 }

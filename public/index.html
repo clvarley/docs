@@ -7,11 +7,32 @@
         <title>Swiftly Static</title>
         <link type="text/css" rel="stylesheet" href="/assets/main.min.css" />
         <script defer src="/assets/main.min.js"></script>
+        <script>
+            (()=>{window.cmdQueue = window.cmdQueue || [];})();
+        </script>
     </head>
     <body>
         <header id="header" class="header">
-            <nav id="navigation" class="navigation content">
-                <ul class="menu navigation__main">
+            <section aria-hidden="true" class="header__top content">
+                <img
+                    width="128"
+                    height="64"
+                    loading="lazy"
+                    class="header__logo"
+                    src="https://via.placeholder.com/128x64"
+                />
+            </section>
+
+            <nav id="navigation" class="header__bottom navigation content">
+                <div class="navigation__mobile">
+                    <button
+                        id="btn-menu"
+                        class="button navigation__button"
+                        aria-controls="menu"
+                    >Menu</button>
+                </div>
+
+                <ul id="menu" class="menu navigation__main">
                     <li class="menu__item">
                         <a class="menu__link" href="#">Test</a>
                     </li>
