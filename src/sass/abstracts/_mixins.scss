@@ -1,0 +1,17 @@
+/**
+ * Mixin functions
+ */
+
+// Apply rules if a modifier CSS class is active
+@mixin is($modifier) {
+    .is-#{$modifier} & {
+        @content;
+    }
+}
+
+// Apply rules is a conditional CSS class is present
+@mixin has($modifier) {
+    .has-#{$modifier} & {
+        @content;
+    }
+}
