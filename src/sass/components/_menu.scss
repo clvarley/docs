@@ -12,9 +12,16 @@
         display: flex;
     }
 
-    &__item {
-        &--right {
-            margin-left: auto;
+    &__item--right {
+        transition: background-color 0.3s ease-in,
+                    color 0.3s ease-in;
+        margin-left: auto;
+
+        @media ( min-width: $tablet ) {
+            @include is("stuck") {
+                color: $colour-white;
+                background-color: $colour-green;
+            }
         }
     }
 
