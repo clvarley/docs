@@ -50,7 +50,8 @@ function buildCss() {
             precision: 2
         }))
         .pipe( purgecss({
-            content: ['public/**/*.html']
+            content: ["public/**/*.html"],
+            safelist: ["is-stuck"]
         }) )
         .pipe( rename({
             extname: ".min.css"
