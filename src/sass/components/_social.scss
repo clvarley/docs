@@ -39,6 +39,11 @@
             color: $colour-twitter;
         }
 
+        &--youtube::after {
+            content: 'YouTube Icon';
+            color: $colour-youtube;
+        }
+
         &--github::after {
             content: "\e900";
             color: $colour-github;
