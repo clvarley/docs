@@ -8,27 +8,39 @@
         <link type="text/css" rel="stylesheet" href="/assets/main.min.css" />
         <script>
             window.cmdQueue = (window.cmdQueue || []);
+            window.cmdQueue.push(() => document.body.classList.add("has-js"));
         </script>
         <script defer src="/assets/main.min.js"></script>
     </head>
     <body>
         <header id="header" class="header">
-            <section aria-hidden="true" class="header__top content">
+            <nav id="social" class="header__top content" aria-label="Our social media">
                 <img
                     width="128"
                     height="64"
                     class="header__logo"
+                    alt=""
                     src="https://via.placeholder.com/128x64"
                 />
-            </section>
 
-            <nav id="navigation" class="header__bottom navigation content">
+                <ul class="header__social social">
+                    <li class="social__item">
+                        <a class="social__link" href="#">
+                            <i aria-hidden="true" class="social__icon social__icon--fb"></i>
+                            <span class="sr-only">Find us on FaceBook</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav id="navigation" class="header__bottom navigation content" aria-label="Site navigation">
                 <div class="navigation__mobile">
                     <button
                         id="btn-menu"
                         class="button navigation__button"
                         aria-controls="menu"
-                    >Menu</button>
+                        aria-label="Open menu"
+                    ></button>
                 </div>
 
                 <ul id="menu" class="menu navigation__main">
@@ -59,7 +71,7 @@
                         Documentation
                     </a>
                     <a class="hero__button button button--success" href="/">
-                      Get Started
+                        Get Started
                     </a>
                 </div>
             </section>
