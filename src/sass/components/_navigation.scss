@@ -8,12 +8,18 @@
     }
 
     &__mobile {
+        @extend %padding-x;
+
+        @include has("nojs") {
+            display: none;
+        }
+
         @media ( min-width: $tablet ) {
             display: none;
         }
     }
 
     &__main {
-      
+
     }
 }

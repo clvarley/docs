@@ -13,6 +13,9 @@ const buffer = require( "vinyl-buffer" );
 // Path to the root directory (change if desired)
 const root = ".";
 
+// Used for versioning
+const timestamp = Date.now();
+
 /**
  * Builds JS for the site
  */
@@ -51,7 +54,7 @@ function buildCss() {
         }))
         .pipe( purgecss({
             content: ["public/**/*.html"],
-            safelist: ["is-stuck"]
+            safelist: ["is-stuck", "is-open", "has-js", "has-nojs"]
         }) )
         .pipe( rename({
             extname: ".min.css"

@@ -3,10 +3,28 @@
  */
 
 .menu {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    @extend %list-reset;
     line-height: 1;
+    transition: transform 0.4s ease-in-out;
+    top: 106px;
+    left: -100%;
+    bottom: 0;
+    width: 100%;
+    overflow-y: auto;
+
+    @include has("js") {
+        position: fixed;
+        transform: translateX(0);
+        background-color: $colour-white;
+
+        &.is-open {
+            transform: translateX(100%);
+        }
+
+        @media ( min-width: $tablet ) {
+            position: static;
+        }
+    }
 
     @media ( min-width: $tablet ) {
         display: flex;

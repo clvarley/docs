@@ -9,9 +9,25 @@
     box-shadow: .0625rem .0625rem .375rem -.25rem $colour-black;
     // box-shadow: 1px 1px 6px 4px #0F0A0A;
 
+    &__top {
+        @extend %padding-x;
+
+        @media ( min-width: $tablet ) {
+            display: flex;
+        }
+    }
+
     &__logo {
         display: block;
         width: auto;
         height: 4rem;
+    }
+
+    &__social {
+        align-self: center;
+
+        @media ( min-width: $tablet ) {
+            margin-left: auto;
+        }
     }
 }
