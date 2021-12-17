@@ -9,11 +9,11 @@ function menu() {
     button.addEventListener("click", () => {
         if (is_open) {
             element.classList.remove("is-open");
-            element.setAttribute("aria-expanded", "false");
+            button.setAttribute("aria-expanded", "false");
             element.blur();
         } else {
             element.classList.add("is-open");
-            element.setAttribute("aria-expanded", "true");
+            button.setAttribute("aria-expanded", "true");
             element.focus();
         }
 

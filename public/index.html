@@ -8,11 +8,14 @@
         <link type="text/css" rel="stylesheet" href="/assets/main.min.css" />
         <script>
             window.cmdQueue = (window.cmdQueue || []);
-            window.cmdQueue.push(() => document.body.classList.add("has-js"));
+            window.cmdQueue.push(() => {
+                document.body.classList.remove("has-nojs");
+                document.body.classList.add("has-js");
+            });
         </script>
         <script defer src="/assets/main.min.js"></script>
     </head>
-    <body>
+    <body class="has-nojs">
         <header id="header" class="header">
             <nav id="social" class="header__top content" aria-label="Our social media">
                 <img
@@ -26,8 +29,14 @@
                 <ul class="header__social social">
                     <li class="social__item">
                         <a class="social__link" href="#">
-                            <i aria-hidden="true" class="social__icon social__icon--fb"></i>
-                            <span class="sr-only">Find us on FaceBook</span>
+                            <i aria-hidden="true" class="social__icon social__icon--twitter"></i>
+                            <span class="sr-only">Follow us on Twitter.</span>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="#">
+                            <i aria-hidden="true" class="social__icon social__icon--github"></i>
+                            <span class="sr-only">Star us on Github.</span>
                         </a>
                     </li>
                 </ul>
@@ -38,6 +47,7 @@
                     <button
                         id="btn-menu"
                         class="button navigation__button"
+                        aria-expanded="false"
                         aria-controls="menu"
                         aria-label="Open menu"
                     ></button>
