@@ -8,11 +8,11 @@ function menu() {
 
     button.addEventListener("click", () => {
         if (is_open) {
-            element.classList.remove("is-open");
+            document.body.classList.remove("is-open");
             button.setAttribute("aria-expanded", "false");
             element.blur();
         } else {
-            element.classList.add("is-open");
+            document.body.classList.add("is-open");
             button.setAttribute("aria-expanded", "true");
             element.focus();
         }

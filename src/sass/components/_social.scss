@@ -3,7 +3,7 @@
  */
 .social {
     @extend %list-reset;
-    display: flex;
+    @extend %flex;
     line-height: 1;
 
     &__link {
