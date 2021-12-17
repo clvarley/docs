@@ -2,6 +2,8 @@
  * Defines project wide SCSS variables
  */
 
+$version: '1.0';
+
 /* ============ Breakpoints ============ */
 
 $tablet: 48.01em;  // (768px)
@@ -21,6 +23,9 @@ $colour-white: #fff;
 $colour-black: #0F0A0A;
 $colour-green: #32965D;
 $colour-raspberry: #963253;
+
+$colour-twitter: #1DA1F2;
+$colour-github: #333;
 
 
 /* ============ Background ============ */

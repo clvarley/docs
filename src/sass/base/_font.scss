@@ -3,3 +3,12 @@
  *
  * Place your `@font-face` rules here.
  */
+
+@font-face {
+    font-family: 'icons';
+    src: url('/assets/font/icons.ttf?#{$version}') format('truetype'),
+         url('/assets/font/icons.woff?#{$version}') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
