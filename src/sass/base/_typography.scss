@@ -4,6 +4,10 @@
  * Put any typographic/font specific styles here.
  */
 
+body {
+    color: $colour-black;
+}
+
 %font-small, .font-small {
     font-size: $font-small; // 12px
 }

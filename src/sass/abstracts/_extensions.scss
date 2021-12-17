@@ -39,3 +39,12 @@
     padding: 0;
     list-style: none;
 }
+
+/* ============ Links ============ */
+
+%link-hover {
+    &:hover, &:focus {
+        color: $colour-raspberry;
+        text-decoration: underline;
+    }
+}

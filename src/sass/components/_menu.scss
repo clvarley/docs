@@ -46,5 +46,6 @@
     &__link {
         display: block;
         @extend %padding;
+        @extend %link-hover;
     }
 }
