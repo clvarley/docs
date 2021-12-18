@@ -1,0 +1,35 @@
+/**
+ * Site iconography
+ */
+
+.icon {
+    display: block;
+    font-family: 'icons';
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+
+    &::after {
+        display: block;
+        width: 1em;
+        height: 1em;
+        line-height: 1;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    &--twitter::after {
+        content: "\e901";
+        color: $colour-twitter;
+    }
+
+    &--youtube::after {
+        content: "\e903";
+        color: $colour-youtube;
+    }
+
+    &--github::after {
+        content: "\e900";
+        color: $colour-github;
+    }
+}
