@@ -2,6 +2,9 @@
  * Defines project wide SCSS variables
  */
 
+// https://coolors.co/f2dfd7-fef9ff-d4c1ec-9f9fed-736ced
+// #515151
+
 $version: '1.0';
 
 /* ============ Breakpoints ============ */
@@ -9,6 +12,12 @@ $version: '1.0';
 $tablet: 48.01em;  // (768px)
 $laptop: 64.01em;  // (1024px)
 $desktop: 80.01em; // (1280px)
+
+
+/* ============ Font Families ============ */
+
+$font-lato: 'Lato', 'Roboto', Roboto, sans-serif;
+$font-raleway: 'Raleway', Helvetica, 'Segoe UI', sans-serif;
 
 
 /* ============ Font Sizes ============ */

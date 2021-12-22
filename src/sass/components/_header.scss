@@ -3,6 +3,7 @@
  */
 
 .header {
+    @extend %font-raleway;
     top: -4rem;
     position: sticky;
     background-color: $colour-white;

@@ -12,3 +12,13 @@
     font-style: normal;
     font-display: block;
 }
+
+%font-lato {
+    font-family: $font-lato;
+    font-weight: 300;
+}
+
+%font-raleway {
+    font-family: $font-raleway;
+    font-weight: 500;
+}
