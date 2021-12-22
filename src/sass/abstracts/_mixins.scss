@@ -9,7 +9,7 @@
     }
 }
 
-// Apply rules is a conditional CSS class is present
+// Apply rules if a conditional CSS class is present
 @mixin has($modifier) {
     .has-#{$modifier} & {
         @content;

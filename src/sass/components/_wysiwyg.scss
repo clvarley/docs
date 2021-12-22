@@ -1,0 +1,35 @@
+/**
+ * What you see is what you get!
+ */
+.wysiwyg {
+    line-height: 1;
+
+    h2 {
+        @extend %font-raleway;
+        margin: 0;
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        @extend %font-raleway;
+        margin: .5rem 0 0;
+        font-size: 1.25rem;
+    }
+
+    h4 {
+        @extend %font-raleway;
+        margin: .5rem 0 0;
+        font-size: 1rem;
+    }
+
+    p {
+        margin: 2rem 0;
+        font-size: 1.25rem;
+        line-height: 1.5;
+
+        @media ( min-width: $tablet ) {
+            letter-spacing: .5px;
+            text-align: justify;
+        }
+    }
+}
