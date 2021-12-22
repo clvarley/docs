@@ -4,23 +4,19 @@
 
 .header {
     @extend %font-raleway;
-    top: -4rem;
     position: sticky;
-    background-color: $colour-white;
-    box-shadow: .0625rem .0625rem .375rem -.25rem $colour-black;
-    // box-shadow: 1px 1px 6px 4px #0F0A0A;
-    transition: top .3s ease-in-out;
+    top: 0px;
 
-    @include is("open") {
-        top: 0;
+    @media ( min-width: $tablet ) {
+        top: -4rem;
     }
+
+    background-color: $colour-white;
+    box-shadow: .0625rem .0625rem .375rem -.25rem $colour-black; // 1px 1px 6px 4px #0F0A0A;
 
     &__top {
         @extend %padding-x;
-
-        @media ( min-width: $tablet ) {
-            display: flex;
-        }
+        display: flex;
     }
 
     &__logo {
@@ -31,9 +27,6 @@
 
     &__social {
         align-self: center;
-
-        @media ( min-width: $tablet ) {
-            margin-left: auto;
-        }
+        margin-left: auto;
     }
 }
