@@ -27,6 +27,10 @@
         @media ( min-width: $laptop ) {
             font-size: 2.5rem;
         }
+
+        @media ( min-width: $desktop ) {
+            font-size: 2.75rem;
+        }
     }
 
     &__tag {

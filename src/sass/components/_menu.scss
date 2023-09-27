@@ -48,6 +48,10 @@
     &__link {
         display: block;
         @extend %padding;
-        @extend %link-hover;
+
+        &:hover, &:focus {
+            text-decoration: underline;
+            background-color: $background-nav;
+        }
     }
 }
