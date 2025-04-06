@@ -62,5 +62,21 @@ function buildCss() {
         .pipe( dest( root + "/public/assets/" ) );
 }
 
+/**
+ * Move icon font and SVG into the public assets folder
+ */
+function moveIcons() {
+    return src([
+            root + "/src/font/icomoon/*.ttf",
+            root + "/src/font/icomoon/*.woff"
+        ])
+        .pipe( rename( function (path) {
+            path.basename = "icons";
+
+            return path;
+        }))
+        .pipe( dest( root + "/public/assets/font/") );
+}
+
 // Make it public
-exports.default = parallel( buildJs, buildCss );
+exports.default = parallel(buildJs, buildCss, moveIcons);
